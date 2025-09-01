@@ -3,16 +3,18 @@ import bebidas.*
 
 object tito {
   
-  var bebida = ningunaBebida
-
+  var bebida = cianuro
+  var cantidadDeBebida = 0
+  method inercia() {return 490} 
   method peso() {return 70}
   method consumir(unaCantidad, unaBebida) {
-
     bebida = unaBebida
-    unaBebida.rendimiento(unaCantidad)
-  } 
+    cantidadDeBebida = unaCantidad
+ } 
 
-    method velocidad() = (self.rendimiento() * 490) / self.peso()
-
+    //method velocidad() = (self.rendimiento() * 490) / self.peso()
+  method velocidad() {
+    return (bebida.rendimiento(cantidadDeBebida) * self.inercia()) / self.peso()
+  }
 
 }

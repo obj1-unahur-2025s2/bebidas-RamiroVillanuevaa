@@ -7,10 +7,5 @@ object terere {
 }
 
 object cianuro {
-  method rendimiento(dosis) = 0 ** dosis
-}
-
-
-object ningunaBebida {
-  method rendimiento(dosis) = 0 ** dosis
+  method rendimiento(dosis) = 0 
 }
