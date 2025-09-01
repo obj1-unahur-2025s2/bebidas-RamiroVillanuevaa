@@ -16,4 +16,9 @@ describe "teste de las aventuras de tito" {
     tito.consumir(5, terere)
     assert.equals(1 * tito.inercia() / tito.peso(), tito.velocidad())
   }
+
+
+  test "tito inicia muerto"{
+    assert.that(tito.estaMuerto())
+  }
 }

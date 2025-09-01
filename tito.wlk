@@ -16,5 +16,9 @@ object tito {
   method velocidad() {
     return (bebida.rendimiento(cantidadDeBebida) * self.inercia()) / self.peso()
   }
+  
+  method estaMuerto() {
+    return bebida.rendimiento(cantidadDeBebida) == 0
+  }
 
 }
